@@ -24,7 +24,7 @@ function solution(N) {
     let result = 0;
 
     for(let i = 0; i < binaryN.length; i++) {
-        if (binaryN[i] == 1 ) {
+        if ( binaryN[i] == 1 ) {
             result = (aux > result) ? aux : result;
             aux = 0;
             continue;
