@@ -39,6 +39,7 @@ In your solution, focus on correctness. The performance of your solution will no
 
 function solution(A, K) {
     // write your code in JavaScript (Node.js 8.9.4)
+    if (A.length === 0) { return []; }
     for (let i=0; i<K; i++) {
         let aux = A.pop();
         A.unshift(aux);
